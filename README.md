@@ -1,4 +1,4 @@
 # DesignLeagueTeam
-Armina Khan, Team Leader
-Farhan Kamal, 
-Syeda Mahia, 
+#Armina Khan, Team Leader
+#Farhan Kamal, 
+#Syeda Mahia, 
