@@ -17,10 +17,19 @@ h1{
   padding: 0;
   box-sizing: border-box;
 }
+
 :root{
   --accent-color: #34495e;
   --bg_color: #ecf0f1;
   --main-font: "DM Sans", sans-serif;
   --sub-font: "arial", sans-serif;
   --g-ratio: 1.618;
+}
+
+body{
+  font-family: var(--sub-font);
+  font-weight: 300;
+  background-color: var(--bg-color);
+  color: #111;
+  font-size: 1.2em;
 }
