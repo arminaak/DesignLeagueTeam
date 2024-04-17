@@ -41,7 +41,16 @@ h1,h2, h3, .title{
 .title{
   color: var(--accent-color);
 }
-
+.wrapper{
+  display: flex;
+  flex-direction: colomn;
+  justify-content: center;
+  width: calc(100vw / var(--g-ratio));
+  height: 100vh;
+  min-width: 800px;
+  margin: 0 auto;
+  background-color: inherit;
+}
 
 
 
