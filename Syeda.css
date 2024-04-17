@@ -4,33 +4,19 @@
   font-style: normal;
 }
 
-.crimson-text-semibold {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: normal;
+h1{
+font-family: "Crimson Text", serif;
 }
 
-.crimson-text-bold {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: normal;
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.crimson-text-regular-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.crimson-text-semibold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.crimson-text-bold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
+:root{
+  --acccent-color: #34495e;
+  --bg-color: #ecf0f1
+  --main-font: :  "Crimson Text", serif;
+  --sub-font: "Pacifico", cursive;
+  --g-ratio: 1.618
+} 
