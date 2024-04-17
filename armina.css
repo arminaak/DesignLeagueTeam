@@ -11,3 +11,16 @@
 h1{
   font-family: "DM Sans", sans-serif;
 }
+
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --accent-color: #34495e;
+  --bg_color: #ecf0f1;
+  --main-font: "DM Sans", sans-serif;
+  --sub-font: "arial", sans-serif;
+  --g-ratio: 1.618;
+}
