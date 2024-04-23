@@ -48,7 +48,8 @@ function Ninjas(name, age, height, color) {
     const coinImg = document.createElement('img');
     coinImg.setAttribute('src', 'imgs/coin.png');
     coinImg.setAttribute('id', 'coin-img');
-    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px');
+    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px'); 
+    //in notes last part was written as 'px)';  and not 'px');
     container.appendChild(coinImg);
 
     $('#coin-img').animate({ top: '60%', opacity: 1 }, 250);
@@ -129,7 +130,7 @@ const promptUser = () => {
     btnContainer.innerHTML = 
       "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
     const newBtns = document.querySelectorAll('button');
-    for (let i = 0; i < newBtnss.length; i++) {
+    for (let i = 0; i < newBtns.length; i++) {
       newBtns[i].style.setProperty('margin-left', '1.5rem');
     }
 
