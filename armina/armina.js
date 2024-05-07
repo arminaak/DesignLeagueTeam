@@ -1,14 +1,3 @@
-//Loader
-window .addEventListener('load', () => {
-  const loader = document. querySelector('.loader');
-  setTimeout(() => {
-    loader.setAttribute('style', 'opacity: 0;');
-  }, 500);
-  setTimeout(() => {
-    loader.parentNode.removeChild(loader);
-    document.body.style.overflow = 'intial';
-  }, 1000);
-});
 
 const coinSfx = new Sfx('sfx/Mario Coin.wav');
 const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
