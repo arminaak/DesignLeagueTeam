@@ -6,11 +6,113 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Farhan</h1>
-    <img class="imageUser" src="images/users/FarhanKamal.png" alt="Farhan Kamal"/>
-    <h2>Role</h2>
-    <h3>Designer/Programer</h3>
-    <p>I created the simple Main Menu which includes the homepage the options and credits page and the how to play page</p>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDsL5GQtuxELg4EpE3T87Io%2FUntitled%3Ftype%3Ddesign%26node-id%3D1%253A5%26mode%3Ddesign%26t%3D6rQl1EeJ8Rnj0T9P-1" allowfullscreen></iframe>
+     <div class="GameBoyCase">
+    <div class="GameBoyScreen">
+      <div id="container">
+
+        <div id="animate"></div>
+
+      </div>
+      </div>
+      <h1>JavaBoy</h1>
+    <div id="controls">
+      <button id="keyboard_key_up" class="movements_control" onclick="movement()"></button>
+      <button id="keyboard_key_left" class="movements_control"</button>
+      <button id="keyboard_key_center" class="movements_control" onclick="randoMode()"></button>
+      <button id="keyboard_key_down" class="movements_control" onclick="movementB()"></button>
+      <button id="keyboard_key_right" class="movements_control"></button>
+    </div>
+    <button type="button" onclick="add()">Add 6+5 </button>
+
+    <button type="button" onclick="min()">subtract 6-5 </button>
+
+    <button type="button" onclick="multi()">multiply 6*5 </button>
+
+    <button type="button" onclick="divi()">divide 6/5 </button>
+
+    <button type="button" onclick="greet()">Greet </button>
+
+
+    <p id="demo">This will change with javascript</p>
+
+    <div onmousemove="moveFunk(event)"></div>
+  </div>
+  <script>
+  function add() {
+   document.getElementById("demo").innerHTML=6+5;
+  }
+
+  function min() {
+   document.getElementById("demo").innerHTML=6-5;
+  }
+
+  function multi() {
+   document.getElementById("demo").innerHTML=6*5;
+  }
+
+  function divi() {
+   document.getElementById("demo").innerHTML=6/5;
+  }
+
+  function greet() {
+   document.getElementById("demo").innerHTML="Hey there V Sauce Here."
+  }
+  function moveFunk(e){
+  let x = e.clientX
+  let y = e.clientY
+  let coor = "Coordinates: (" +x+"," +y+")"
+  document.getElementById("demo").innerHTML = coor
+  }
+
+  function movement() {
+    let id = null
+    const elem = document.getElementById("animate");
+    let pos = 0
+    clearInterval(id)
+    id = setInterval(frame,5)
+    function frame(){
+  if (pos == 350) {
+    clearInterval(id)
+  } else {
+    pos++
+    elem.style.top = pos+"px"
+    elem.style.left = pos+"px"
+    elem.style.right = pos+"px"
+    elem.style.bottom = pos+"px"
+  }
+  }
+  }
+
+  function movementB() {
+    let id = null
+    const elem = document.getElementById("animate");
+    let pos = 350
+    clearInterval(id)
+    id = setInterval(frame,5)
+    function frame(){
+  if (pos == 0) {
+    clearInterval(id)
+  } else {
+    pos--
+    elem.style.top = pos+"px"
+    elem.style.left = pos+"px"
+    elem.style.right = pos+"px"
+    elem.style.bottom = pos+"px"
+  }
+  }
+  }
+
+  function randoMode() {
+    let id = null
+    const elem = document.getElementById("animate");
+    const elemCon = document.getElementById("container");
+    let height = elemCon.clientHeight / 1.5;
+    let width = elemCon.clientWidth / 2;
+    let randX = Math.floor(Math.random() * width);
+    let randY = Math.floor(Math.random() * height);
+    elem.style.transform = `translate(${randX}px, ${randY}px)`;
+    }
+
+  </script>
   </body>
 </html>
