@@ -48,7 +48,7 @@ function Ninjas(name, age, height, color) {
     const coinImg = document.createElement('img');
     coinImg.setAttribute('src', 'imgs/coin.png');
     coinImg.setAttribute('id', 'coin-img');
-    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px'); 
+    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)'; 
     //in notes last part was written as 'px)';  and not 'px');
     container.appendChild(coinImg);
 
@@ -86,7 +86,7 @@ const promptUser = () => {
 
   this.getHeight = () => {
     height = prompt('Pick height: 1, 2, 3, 4') || 4;
-    height parseInt(height);
+    height = parseInt(height);
     if (height === 1 || height === 2 || height === 3 || height === 4) {
       height = height * 64;
       return;
