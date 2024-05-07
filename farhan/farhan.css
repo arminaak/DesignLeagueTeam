@@ -1,1 +1,160 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1d237266;
+}
 
+#controls {
+  display: inline-grid;
+  grid-column-gap: 0;
+  align-self: end;
+  background: transparent;
+  width: 50px;
+  left: -40%;
+  position: relative;
+}
+
+.movements_control {
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+}
+
+.movements_control img {
+  width: inherit;
+  height: inherit;
+}
+
+#keyboard_key_up {
+  grid-column-start: 2;
+  border-radius: 12px 12px 0px 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_left {
+  grid-column-start: 1;
+  border-radius: 12px 0px 0px 12px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_center {
+  border-radius: 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_down {
+  grid-column-start: 2;
+  border-radius: 0px 0px 12px 12px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_right {
+  grid-column-start: 3;
+  grid-row: 2;
+  border-radius: 0px 12px 12px 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_up:hover {
+  grid-column-start: 2;
+  border-radius: 12px 12px 0px 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_left:hover {
+  grid-column-start: 1;
+  border-radius: 12px 0px 0px 12px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_center:hover {
+  border-radius: 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_down:hover {
+  grid-column-start: 2;
+  border-radius: 0px 0px 12px 12px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#keyboard_key_right:hover {
+  grid-column-start: 3;
+  grid-row: 2;
+  border-radius: 0px 12px 12px 0px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+.GameBoyCase {
+  background-color: #f7f7f7;
+  width: 40%;
+  height: 100%;
+  border-radius: 24px 24px 50px 12px;
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.GameBoyScreen {
+  height: 100%;
+  padding: 10px;
+  background-color: #6c6c9d;
+}
+
+div {
+  width: 405px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 12px;
+}
+
+button {
+  background-color: #9494ff;
+  border: 0px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 12px;
+  transition: ease-in 0.1s;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+#container {
+  width: 405px;
+  height: 380px;
+  background-color: green;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#animate {
+  width: 55px;
+  height: 30px;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 12px;
+  transition: transform 0.5s ease-in-out;
+}
