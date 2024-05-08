@@ -1,4 +1,3 @@
-
 const coinSfx = new Sfx('sfx/Mario Coin.wav');
 const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
 const powerUpSfx = new Sfx('sfx/Mario Powerup.wav');
