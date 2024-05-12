@@ -5,8 +5,8 @@ body {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+  background-color: #181e54;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Links inside the navbar */
@@ -39,7 +39,7 @@ body {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #422078;
 }
 
 /* Dropdown content (hidden by default) */
