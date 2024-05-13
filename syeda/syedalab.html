@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<head>
+
+<title>JavaScript basic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+
+<style>
+
+body{
+
+background-color: #B6DBE4
+
+}
+
+
+#animate{
+
+background-color:white;
+
+width:50px;
+
+height:50px;
+
+position:absolute;
+
+}
+
+#container{
+
+background-color:cadetblue;
+
+width:300px;
+
+height:300px;
+
+position:relative;
+
+}
+
+button{
+
+background-color:white;}
+
+
+</style>
+
+
+
+</head>
+
+<h1 style="font-family:Comic sans; color:black;letter-spacing:0.1cm">JavaScript Output below</h1>
+
+
+<button type="button" onclick="addition()">add 6+5</button>
+
+<button type="button" onclick="subtraction()">subtract 6-5</button>
+
+<button type="button" onclick="multiply()">multiply 6*5</button>
+
+<button type="button" onclick="divide()"> divide 6/5</button> 
+
+<button type="button" onclick="greet()">greet</button>
+
+<p id="demo">This will change with Javascript</p>
+
+<div style="background:darkblue;width:100px;height:100px" onmousemove="moveFunk(event)" onmouseout="clearCoor()">
+
+</div>
+
+
+<button type="button" onclick="moveIt()">Move It</button>
+
+<button type="button" onclick="moveBack()">Move Back</button>
+
+<div id="container">
+
+<div id="animate"></div>
+
+</div>
+
+
+
+<script>
+
+function moveIt(){
+
+let id = null
+
+const elem = document.getElementById("animate")
+
+let pos = 0
+
+clearInterval(id)
+
+id = setInterval (frame,5)
+
+function frame(){
+
+if (pos == 250){
+
+clearInterval(id)
+
+} else{
+
+pos++
+
+elem.style.top = pos + "px"
+
+elem.style.left = pos + "px"
+
+
+}
+
+    }
+
+}
+
+
+function moveBack(){
+
+let id = null
+
+const elem = document.getElementById("animate")
+
+let pos = 250
+
+clearInterval(id)
+
+id = setInterval(frame,5)
+
+function frame(){
+
+if (pos == 0){
+
+clearInterval(id)}
+
+else{
+
+pos--
+
+elem.style.top = pos+"px"
+
+elem.style.left = pos+"px"
+
+}}
+
+}
+
+
+ function addition(){
+
+document.getElementById("demo").innerHTML = 6+5
+
+    }
+
+function subtraction(){
+
+document.getElementById("demo").innerHTML = 6-5
+
+}
+
+function multiply(){
+
+document.getElementById("demo").innerHTML =6*5
+
+}
+
+function divide(){
+
+document.getElementById("demo").innerHTML=6/5
+
+}
+
+function greet(){
+
+document.getElementById("demo").innerHTML="hello world"
+
+}
+
+
+function moveFunk(e){
+
+let x = e.clientX
+
+let y= e.clientY
+
+let coor = "Coordinates:("+x+","+y+")"
+
+document.getElementById ("demo").innerHTML = coor
+
+
+}
+
+
+function clearCoor() {
+
+document.getElementById("demo").innerHTML = " "
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+
+
