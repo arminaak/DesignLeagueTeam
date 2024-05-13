@@ -7,7 +7,7 @@ h1{
   text-align:center;
   font-size:32px;
 }
-
+/* start nav bar css */
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -77,3 +77,4 @@ h1{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* end nav bar css */
