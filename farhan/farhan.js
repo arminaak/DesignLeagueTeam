@@ -1,3 +1,4 @@
+const container = document.querySelector('.content');
 const coinSfx = new Sfx('farhan/GameAssets/Sounds/Mario Coin.wav');
 const pipeSfx = new Sfx('farhan/GameAssets/Sounds/Mario Pipe.wav');
 const powerUpSfx = new Sfx('farhan/GameAssets/Sounds/Mario Powerup.wav');
