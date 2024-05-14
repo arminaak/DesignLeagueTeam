@@ -1,7 +1,7 @@
 const container = document.querySelector('.content');
-const coinSfx = new Sfx('GameAssets/Sounds/Mario Coin.wav');
-const pipeSfx = new Sfx('GameAssets/Sounds/Mario Pipe.wav');
-const powerUpSfx = new Sfx('GameAssets/Sounds/Mario Powerup.wav');
+const coinSfx = new Sfx('farhan/GameAssets/Sounds/Mario Coin.wav');
+const pipeSfx = new Sfx('farhan/GameAssets/Sounds/Mario Pipe.wav');
+const powerUpSfx = new Sfx('farhan/GameAssets/Sounds/Mario Powerup.wav');
 let ninja;
 
 function Sfx(src) {
@@ -34,7 +34,7 @@ function Ninjas(name, age, height, color) {
 
     // coin effect
     const coinImg = document.createElement('img');
-    coinImg.setAttribute('src', 'GameAssets/Images/coin.png');
+    coinImg.setAttribute('src', 'farhan/GameAssets/img/coin.png');
     coinImg.setAttribute('id', 'coin-img');
     coinImg.style.transform = 'translate(-50%, calc(-100% - ' + ninja.height + 'px)';
     container.appendChild(coinImg);
@@ -98,15 +98,15 @@ const promptUser = () => {
     img = document.createElement('img');
     let size = 'width:' + height + 'px;height:' + height + 'px;';
     if (color === 'blue') {
-      img.setAtrribute('src', 'GameAssets/img/NinjaSprite/ninja1.png');
+      img.setAtrribute('src', 'farhan/GameAssets/img/NinjaSprite/ninja1.png');
       img.setAtrribute('style', size);
       container.appendChild(img);
     } else if (color === 'green') {
-      img.setAtrribute('src', 'GameAssets/img/NinjaSprite/ninja2.png');
+      img.setAtrribute('src', 'farhan/GameAssets/img/NinjaSprite/ninja2.png');
       img.setAtrribute('style', size);
       container.appendChild(img);
     } else if (color === 'red') {
-      img.setAtrribute('src', 'GameAssets/img/NinjaSprite/ninja3.png');
+      img.setAtrribute('src', 'farhan/GameAssets/img/NinjaSprite/ninja3.png');
       img.setAtrribute('style', size);
       container.appendChild(img);
     }
